@@ -476,7 +476,7 @@ function simplenews_digest_select_nodes($newsletter) {
 }
 
 // Generate the body of the newsletter
-function theme_simplenews_digest_format_newsletter($newsletter) {
+function theme_simplenews_digest_format_newsletter(&$newsletter) {
   // Get sections of newsletter, each section is a listing of links to nodes sorted by content type/date
   $content_types = variable_get('simplenews_digest_content_types', 0);
   $output_by_type = array();
